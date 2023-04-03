@@ -1,0 +1,135 @@
+<!-- Ennoncé TP n°02 HTML -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="tp2" content="tp2">
+    <title>TP2 HTML - Téa Petit</title>
+</head>
+<body>
+    <!-- En tête -->
+    <header>
+        <h1>TP n°2 - La structuration</h1>
+        
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a href="#intro" title="Intro">Introduction</a></li>
+                <li><a href="#primaire" title="Primaire">Les éléments primaires</a></li>
+                <li>
+                    <nav>
+                <!-- Menu de navigation imbriqué n°01 -->
+                        <ul>
+                            <li><a href="#header" title="header">Header</a></li>
+                            <li><a href="#nav" title="nav">Nav</a></li>
+                            <li><a href="#article" title="article">Article</a></li>
+                            <li><a href="#footer" title="footer">Footer</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <!-- Fin du menu de navigation imbriqué n°01 -->
+
+                <li><a href="#complements" title="complement">Les éléments primaires</a></li>
+                
+                <!-- Menu de navigation imbriqué n°02 -->
+                <li>
+                    <nav>
+                        <ul>
+                            <li><a href="#division" title="division">Div</a></li>
+                            <li><a href="#span" title="span">Span</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <!-- Fin du menu de navigation imbriqué n°02 -->
+                
+            </ul>
+        </nav>
+        <!-- Fin du menu de navigation -->
+    
+        <h2 id="intro">Introduction</h2>
+        <p>En général, une page web est constituée d'un en-tête (tout en haut), de menus de navigation (en haut ou sur les côtés), de différentes sections au centre… et d'un pied de page (tout en bas).</p>
+
+        <p>Dans ce chapitre, nous allons nous intéresser aux nouvelles balises HTML dédiées à la structuration du site.<br>
+        Ces balises ont été introduites par HTML5 (elles n'existaient pas avant) et vont nous permettre de dire : « Ceci est mon en-tête », « Ceci est mon menu de navigation », etc.</p>
+
+        <p>Pour le moment, nous n'allons pas encore faire de mise en page.<br>
+        Nous allons en fait préparer notre document HTML pour pouvoir découvrir la mise en page dans les prochains chapitres.</p>
+    <!-- Fin de l'en-tête -->
+    </header>
+    <!-- Article -->
+    <article>
+        <div class="article1">
+        <h2 id="primaire">Les éléments de structuration primaire</h2>
+        <p>Je vais vous présenter ici les nouvelles balises introduites par HTML5 pour structurer nos pages.<br>
+        Vous allez voir, cela ne va pas beaucoup changer l'apparence de notre site pour le moment, mais il sera bien construit et prêt à être mis en forme ensuite !</p>
+        </div>
+
+        <div class="article1">
+        <h3 id="header">&lt;header&gt;  : l'en-tête</h3>
+        <p>La plupart des sites web possèdent en général un <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/header" title="en-tete">en-tête</a>, appelé header en anglais.<br> 
+        On y trouve le plus souvent un logo, une bannière, le slogan de votre site…<br>
+        Vous devrez placer ces informations à l'intérieur de la balise &lt;header&gt;.</p>
+
+        <p>L'en-tête peut contenir tout ce que vous voulez : images, liens, textes…</p>
+        </div>
+
+        <div class="article1">
+        <h3 id="nav" style="font-size:1.17em;">&lt;nav&gt; : principaux liens de navigation</h3>
+        <h5 style="font-size:1em; font-weight: 100; margin-bottom:0; ">La balise <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav" title="balise">&lt;nav&gt;</a> doit regrouper tous les principaux liens de navigation du site.</h5><p>
+        Vous y placerez par exemple le menu principal de votre site.<br>
+        Généralement, le menu est réalisé sous forme de liste à puces à l'intérieur de la balise &lt;nav&gt; :</p>
+
+        <h3 id="article">&lt;article&gt; : un article indépendant</h3>
+        <p>La balise <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" title="balise"> &lt;article&gt;</a> sert à englober une portion généralement autonome de la page. C'est une partie de la page qui pourrait ainsi être reprise sur un autre site. C'est le cas par exemple des actualités (articles de journaux ou de blogs).</p>
+        </div>
+
+        <div class="article1">
+        <h3 id="footer">&lt;footer&gt; : le pied de page</h3>
+        <p>À l'inverse de l'en-tête, le <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer" title="footer">pied de page</a> se trouve en général tout en bas du document.<br>
+        On y trouve des informations comme des liens de contact, le nom de l'auteur, les mentions légales, etc.</p>
+        </div>
+
+        <div class="article1">
+        <hr>
+        <p>Source de l'article : 
+            <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605881-structurez-votre-page" title="source">OpenClassRoom</a> 
+        </p>
+        <hr>
+        </div>
+    <!-- Fin de l'article -->
+    </article>
+    <!-- Second article -->
+    <article>
+        <div class="article2">
+        <h2 id="complements">Les éléments de structuration complémentaires</h2>
+        <h3 id="division">&lt;div&gt;  : la division</h3>
+        <p>Elément HTML qui, par défaut, permet de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div" title="division">diviser</a> du contenu sous forme de blocs (systématiquement avec un retour à la ligne).<br> 
+        Vous comprendrez l’utilité de cet élément très prochainement avec le cours sur le CSS.</p>
+
+        <h3 id="span">&lt;span&gt;  : le conteneur générique en ligne</h3>
+        <p>Elément HTML qui, par défaut, permet de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/span" title="conteneur">fractionner</a> du contenu sans retour à la ligne (affichage côte à côte).<br>
+        Le span est très utile pour esthétiquement mettre en valeur des mots ou groupes de mots au sein d’un paragraphe (via CSS).</p>
+        </div>
+
+        <div class="article2">
+        <hr>
+        <p>Source de l'article : 
+            <a href="#" title="source">Cours HTML - Yohann MOY</a> 
+        </p>
+        <hr>
+        </div>
+    <!-- Fin du second article -->
+    </article>
+
+    <!-- Pied de page -->
+    <footer>
+        <hr>
+        <p>TP d'HTML n°02 - Téa Petit</p>
+        <hr>
+    <!-- Fin du pied de page -->
+    </footer>
+    
+</body>
+</html>
